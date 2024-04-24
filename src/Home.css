@@ -1,0 +1,60 @@
+/* Reset margin, padding, and box-sizing for all elements */
+/* html,
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* Apply background color and font to the body */
+body {
+  width: 100%;
+  font-family: "Crimson", serif;
+  background-color: #b9cfe6;
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('background.jpg'); /* Replace 'background.jpg' with the name of your image file */
+    background-size: cover; /* Cover the entire container with the background image */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+  }
+  
+  video {
+    position: relative; /* Ensure the container is positioned */
+    /* margin-top: 10vh; */
+    max-width: 100%; /* Set the maximum width of the video to 90% of its container */
+    max-height: 100vh; /* Set the maximum height of the video to 80% of the viewport height */
+    width: auto; /* Allow the video to resize proportionally */
+    height: auto; /* Allow the video to resize proportionally */
+  }  
+  
+  .additional-content {
+    position: absolute; /* Position the content absolutely */
+    top: 100%; /* Position the content below the video container */
+    left: 50%; /* Position the content horizontally centered */
+    transform: translate(-50%, 0); /* Center the content horizontally */
+    width: 80%; /* Set the width of the content */
+    max-width: 600px; /* Limit the maximum width of the content */
+    padding: 20px; /* Add some padding to the content */
+    background-color: white; /* Set a background color for the content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow to the content */
+    text-align: center; /* Center align the content */
+  }
+  
+  .contact-title {
+    position: relative;
+    margin-bottom: 10px; /* Add margin below the title */
+    font-size: 24px; /* Adjust the font size of the title */
+  }
+  
+  .fragrance-info {
+    position: relative;
+    font-size: 16px; /* Adjust the font size of the paragraph */
+  }
+  
